@@ -1,1 +1,7 @@
+.weather-forecast, .footer-element, .current-report, .header-info-search {
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  max-width: 600px;
 
+}

@@ -10,9 +10,12 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <style>
       body {
@@ -27,76 +30,82 @@
   </head>
   <body>
     <div class="container">
-      <header> 
+      <header>
         <div class="header-info-search">
-        <h1>Current city</h1>
-        <form>
-          <input type="text" placeholder="Enter a city ..." required />
-          <input type="submit" value="Submit" />
-        </form>
+          <h1>Current city</h1>
+          <form class="search-form">
+            <input
+              type="text"
+              placeholder="Enter a city ..."
+              class="search-form-input"
+              required
+            />
+            <input type="submit" value="Submit" class="search-form-button" />
+          </form>
         </div>
       </header>
       <main>
         <div class="current-report">
-        <div>
-          <h2>Current weather report here</h2>
-          <p>
-            Current day, current time, weather description
-            <br />
-            Humidity, wind
-          </p>
-        </div>
-        <div>⛅ 12°C|°F</div>
+          <div>
+            <h2>Current weather report here</h2>
+            <p>
+              Current day, current time, weather description
+              <br />
+              Humidity, wind
+            </p>
+          </div>
+          <div>⛅ 12°C|°F</div>
         </div>
       </main>
       <div class="weather-forecast">
-      <div class="row">
-        <div class="col-sm-2">Day</div>
-        <div class="col-sm-2">Degrees</div>
-        <div class="col-sm-2">emoji</div>
-        <div class="col-sm-2">Description</div>
-      </div>
-      <div class="row">
-        <div class="col-sm-2">Day</div>
-        <div class="col-sm-2">Degrees</div>
-        <div class="col-sm-2">emoji</div>
-        <div class="col-sm-2">Description</div>
-      </div>
-      <div class="row">
-        <div class="col-sm-2">Day</div>
-        <div class="col-sm-2">Degrees</div>
-        <div class="col-sm-2">emoji</div>
-        <div class="col-sm-2">Description</div>
-      </div>
-      <div class="row">
-        <div class="col-sm-2">Day</div>
-        <div class="col-sm-2">Degrees</div>
-        <div class="col-sm-2">emoji</div>
-        <div class="col-sm-2">Description</div>
-      </div>
-      <div class="row">
-        <div class="col-sm-2">Day</div>
-        <div class="col-sm-2">Degrees</div>
-        <div class="col-sm-2">emoji</div>
-        <div class="col-sm-2">Description</div>
-      </div>
+        <h3>5-day forecast</h3>
+        <div class="row day-one">
+          <div class="col-sm-2">Day</div>
+          <div class="col-sm-2">Degrees</div>
+          <div class="col-sm-2">emoji</div>
+          <div class="col-sm-2">Description</div>
+        </div>
+        <div class="row day-two">
+          <div class="col-sm-2">Day</div>
+          <div class="col-sm-2">Degrees</div>
+          <div class="col-sm-2">emoji</div>
+          <div class="col-sm-2">Description</div>
+        </div>
+        <div class="row day-three">
+          <div class="col-sm-2">Day</div>
+          <div class="col-sm-2">Degrees</div>
+          <div class="col-sm-2">emoji</div>
+          <div class="col-sm-2">Description</div>
+        </div>
+        <div class="row day-four">
+          <div class="col-sm-2">Day</div>
+          <div class="col-sm-2">Degrees</div>
+          <div class="col-sm-2">emoji</div>
+          <div class="col-sm-2">Description</div>
+        </div>
+        <div class="row day-five">
+          <div class="col-sm-2">Day</div>
+          <div class="col-sm-2">Degrees</div>
+          <div class="col-sm-2">emoji</div>
+          <div class="col-sm-2">Description</div>
+        </div>
       </div>
       <footer>
         <div class="footer-element">
-        Coded with love by
-        <a href="https://github.com/LieneV-D" target="_blank"
-          >Liene Vecvagare</a
-        >
-        ❤. This code is open-sourced on
-        <a href="https://github.com/LieneV-D/lienes-meteo-app" target="_blank"
-          >GitHub</a
-        >
-        and is hosted on
-        <a href="https://lienes-meteo-app.netlify.app/" target="_blank"
-          >Netlify</a
-        >
+          Coded with love by
+          <a href="https://github.com/LieneV-D" target="_blank"
+            >Liene Vecvagare</a
+          >
+          ❤. This code is open-sourced on
+          <a href="https://github.com/LieneV-D/lienes-meteo-app" target="_blank"
+            >GitHub</a
+          >
+          and is hosted on
+          <a href="https://lienes-meteo-app.netlify.app/" target="_blank"
+            >Netlify</a
+          >
+        </div>
       </footer>
-      </div>
     </div>
     <script src="src/app.js"></script>
   </body>

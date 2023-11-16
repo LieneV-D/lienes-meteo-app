@@ -1,10 +1,10 @@
 function updateWeather(response) {
   let temperatureElement = document.querySelector("#current-stats-value");
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
-  let CityElementOne = document.querySelector("#city-search-one");
-  CityElementOne.innerHTML = response.data.city;
-  let CityElementTwo = document.querySelector("#city-search-two");
-  CityElementTwo.innerHTML = response.data.city;
+  let cityElementOne = document.querySelector("#city-search-one");
+  cityElementOne.innerHTML = response.data.city;
+  let cityElementTwo = document.querySelector("#city-search-two");
+  cityElementTwo.innerHTML = response.data.city;
   let conditionsElement = document.querySelector("#condition-description");
   conditionsElement.innerHTML = response.data.condition.description;
   let windSpeedElement = document.querySelector("#current-wind-speed");
@@ -15,6 +15,9 @@ function updateWeather(response) {
 
   let dateTimeElement = document.querySelector("#current-date-time");
   dateTimeElement.innerHTML = formatedDate(date);
+
+  let iconElement = document.querySelector("#current-stats-icon");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" />`;
 }
 
 function formatedDate(date) {

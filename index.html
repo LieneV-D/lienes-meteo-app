@@ -32,14 +32,15 @@
     <div class="container">
       <header>
         <div class="header-info-search">
-          <h1 class="weather-app-city">Riga</h1>
-          <form class="search-form">
+          <h1 class="weather-app-city" id="city-search-one">Riga</h1>
+          <form class="search-form" id="city-search-form">
             <input
               type="text"
               placeholder="Enter a city ..."
               class="search-form-input"
               autofocus="on"
               required
+              id="city-search-input"
             />
             <input type="submit" value="Submit" class="search-form-button" />
           </form>
@@ -48,9 +49,11 @@
       <main>
         <div class="current-report">
           <div>
-            <h2 class="weather-app-city"><small>Currently in</small> Riga</h2>
+            <h2 class="weather-app-city">
+              <small>Currently in</small> <span id="city-search-two">Riga</span>
+            </h2>
             <p>
-              Current day, current time, weather description
+              Current day, current time Weather description
               <br />
               Humidity, wind
             </p>

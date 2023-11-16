@@ -6,7 +6,9 @@ function updateWeather(response) {
   let cityElementTwo = document.querySelector("#city-search-two");
   cityElementTwo.innerHTML = response.data.city;
   let conditionsElement = document.querySelector("#condition-description");
-  conditionsElement.innerHTML = response.data.condition.description;
+  conditionsElement.innerHTML = capitalizeFirstLetter(
+    response.data.condition.description
+  );
   let windSpeedElement = document.querySelector("#current-wind-speed");
   windSpeedElement.innerHTML = response.data.wind.speed;
   let humidityElement = document.querySelector("#current-humidity");
@@ -18,6 +20,10 @@ function updateWeather(response) {
 
   let iconElement = document.querySelector("#current-stats-icon");
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" />`;
+}
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 function formatedDate(date) {
